@@ -1,0 +1,35 @@
+
+mat-form-field{
+    margin: 0px 50px;
+    width: 400px;
+
+}
+mat-label{
+    color: #22302e;
+}
+
+table{
+    height: 400px;
+    width: 1000px;
+    margin: 10px 50px;
+    border-radius: 35px;
+    
+}
+table th{
+    font-size: 15px;
+    color: #fff;
+
+    background-image: linear-gradient(#22534c, #788381);
+}
+th{
+    padding: 0 60px;
+}
+td{
+    padding: 20px 60px;
+}
+
+::ng-deep .mat-sort-header-arrow{
+    color: #fff !important;
+}
+
+  

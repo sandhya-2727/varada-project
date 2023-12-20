@@ -1,0 +1,11 @@
+button{
+    background-color: #119175;
+}
+button:hover{
+  background-color: #119175;
+  color: #0000;
+}
+section h1{
+  font-weight: bold;
+  font-size: 28px;
+}

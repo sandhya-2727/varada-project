@@ -1,0 +1,44 @@
+<mat-drawer-container class="container">
+    <mat-drawer class="side-nav"#drawer mode="side">
+       <i class="fa fa-users" id="users"><span class="employees">Employees</span></i>
+      <h4 class="project">PROJECTS</h4>
+      <mat-divider></mat-divider>
+      <mat-list role="list">
+        <mat-list-item  role="listitem">
+            <i class="fa fa-dribbble" id="sport-icon"><span class="text">Arena Sports</span></i>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <i class="fa fa-cube" id="dsv-icon"><span class="text">Education</span></i>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <i class="fa fa-shopping-cart" id="cart-icon"><span class="text">Seafood Mall</span></i>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <i class="fa fa-star" id="star-icon"><span class="text">Fire Star</span></i>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <i class="fa fa-home" id="bank-icon"><span class="text">Zeta Bank</span></i>
+        </mat-list-item>
+      </mat-list>
+      <mat-divider></mat-divider>
+      <div class="bottom">
+        <h4 class="status">JOB TYPE</h4>
+            <mat-list-item  role="listitem">
+                <i class="fa fa-briefcase" id="office-icon"><span class="type-text">Work From Home</span></i>
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <i class="fa fa-home" id="remote-icon"><span class="type-text">Remote</span></i>
+            </mat-list-item>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="content">
+            <div class="pageContent"> 
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

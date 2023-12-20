@@ -1,0 +1,14 @@
+.mat-my-color{
+    background-image: linear-gradient(#119175, #7a7777);
+}
+mat-label{
+    font-size: 16px;
+    color: #363333;
+}
+mat-form-field{
+    width: 100%;
+    padding: 5px;
+}
+.mat-my-color-close{
+    background-image: linear-gradient(#343439ee, #7a7777);
+}

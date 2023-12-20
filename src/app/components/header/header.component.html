@@ -1,0 +1,32 @@
+<div class="header">
+    <header class="text-gray-400 body-font">
+        <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none"   stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-13 h-12 text-white p-2 bg-gray-600 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl" style="font-size: 30px; margin-bottom: 6px;">VARADA SOFTWARE SOLUTIONS</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            
+               <a class="mr-12" [routerLink]="'/home'">Home</a>
+               <a class="mr-12" [routerLink]="'/services'">Services</a>
+               <a class="mr-12" [routerLink]="'/employees'">Employees</a>
+               <a class="mr-12" [routerLink]="'/contactUs'">Contact Us</a>
+
+          </nav>
+          <i class="fa fa-user" id="user-icon" [matMenuTriggerFor]="menu"></i>
+          
+        </div>
+        
+    </header>
+      
+</div>
+
+<mat-menu #menu="matMenu">
+    <button class="menu-item" mat-menu-item><mat-icon>account_circle</mat-icon><span class="register" (click)="register()">Register</span></button>
+    <button class="menu-item" mat-menu-item><mat-icon>exit_to_app</mat-icon><span class="register">Login</span></button>
+    <button class="menu-item" mat-menu-item><mat-icon>power_settings_new</mat-icon><span class="register">Exit</span></button>
+
+
+</mat-menu>

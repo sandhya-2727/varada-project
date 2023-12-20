@@ -1,0 +1,12 @@
+ [
+    {"EmpId": "1",  "EmpName":"Jhon", "EmpSalary": "100k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"Excellent" },
+    {"EmpId": "2", "EmpName":"Joseph", "EmpSalary": "120k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"GOOD" },
+    {"EmpId": "3", "EmpName":"Steve", "EmpSalary": "150k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"GOOD" },
+    {"EmpId": "4", "EmpName":"Robert", "EmpSalary": "160k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"Average" },
+    {"EmpId": "5", "EmpName":"James", "EmpSalary": "170k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"Excellent" },
+    {"EmpId": "6", "EmpName":"Martin", "EmpSalary": "120k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"GOOD" },
+    {"EmpId": "7", "EmpName":"Stellah", "EmpSalary": "150k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"GOOD" },
+    {"EmpId": "8", "EmpName":"Rosie", "EmpSalary": "100k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"Excellent" },
+    {"EmpId": "9", "EmpName":"Mareena", "EmpSalary": "110k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"Excellent" },
+    {"EmpId": "10", "EmpName":"Stalin", "EmpSalary": "130k", "EmpRole": "Sr.Software Developer", "EmpPerformance":"GOOD" }
+]

@@ -1,0 +1,75 @@
+<mat-toolbar color="my-color">
+    <mat-toolbar-row>
+        <span>Register</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-dialog-content>
+    <form [formGroup]="registerForm">
+    <div class="form-group">
+        <mat-form-field>
+            <mat-label>Username:</mat-label>
+            <input matInput 
+                   type="text"
+                   formControlName="username" required>
+                   <mat-error *ngIf="registerForm.controls.username.touched &&
+                                     registerForm.controls.username.invalid">
+                                     <span *ngIf="registerForm.controls.username.errors?.required">
+                                    This Field is Required</span>
+                                    <span *ngIf="registerForm.controls.username.errors?.pattern">
+                                    Invalid Username</span>
+                    </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Password:</mat-label>
+            <input matInput 
+                   type="password"
+                   formControlName="password" required>
+                   <mat-error *ngIf="registerForm.controls.password.touched &&
+                                     registerForm.controls.password.invalid">
+                                     <span *ngIf="registerForm.controls.username.errors?.required">
+                                    This Field is Required</span>
+                                   
+                    </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email:</mat-label>
+            <input matInput 
+                   type="text"
+                   formControlName="email" required>
+                   <mat-error *ngIf="registerForm.controls.email.touched &&
+                                     registerForm.controls.email.invalid">
+                                     <span *ngIf="registerForm.controls.email.errors?.required">
+                                    This Field is Required</span>
+                                    <span *ngIf="registerForm.controls.email.errors?.pattern">
+                                    Invalid Email</span>
+                    </mat-error>
+        </mat-form-field>
+
+                    <mat-form-field>
+                        <mat-label>Contact Number:</mat-label>
+                        <input matInput 
+                               type="text"
+                               formControlName="cnumber" required>
+                               <mat-error *ngIf="registerForm.controls.cnumber.touched &&
+                                                 registerForm.controls.cnumber.invalid">
+                                                 <span *ngIf="registerForm.controls.cnumber.errors?.required">
+                                                This Field is Required</span>
+                                                <span *ngIf="registerForm.controls.cnumber.errors?.pattern">
+                                                Invalid Contact Number</span>
+                                </mat-error>
+                    </mat-form-field>
+
+
+                
+        
+    </div>
+</form>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: center;">
+    <button mat-raised-button color="my-color" [disabled]="!(registerForm.valid && registerForm.dirty)" (click)="onRegister()">Register</button>
+    <button mat-raised-button color="my-color-close" mat-dialog-close="true">Close</button>
+
+</mat-dialog-actions>
